@@ -9,8 +9,10 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "mockjs": "^1.0.1-beta3",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "yarn": "^1.19.1"
   },
   "devDependencies": {
     "@types/jest": "^23.3.12",
@@ -35,8 +37,14 @@
     "umi-types": "^0.3.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["tslint --fix", "git add"],
-    "*.{js,jsx}": ["eslint --fix", "git add"]
+    "*.{ts,tsx}": [
+      "tslint --fix",
+      "git add"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "engines": {
     "node": ">=8.0.0"
